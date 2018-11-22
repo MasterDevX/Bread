@@ -1,0 +1,76 @@
+div.button{
+    text-align: center;
+    -webkit-transition: all .3s;
+    animation: main 2s infinite;
+    border: solid black 2px;
+    margin: auto;
+    height: 60px;
+    width: 300px;
+    margin-top: 300px;
+    border-radius: 15px;
+    background: green;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    box-shadow: grey 8px 8px 2px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+div.button:hover{
+    animation: none;
+    width: 350px;
+    background: orange;
+    color: black;
+    transform: rotate(3deg) scale(1.05,1.05);
+}
+div.button:active{
+    animation: none;
+    width: 250px;
+    background: black;
+    color: white;
+    transform: rotate(-3deg) scale(0.95,0.95);
+}
+a.btnlink:link,a.btnlink:active,a.btnlink:visited,a.btnlink:hover{
+    text-decoration: none;
+}
+div.secondarydiv{
+    -webkit-transition: all .3s;
+    animation: cclsecondary 3s infinite;
+    background: orange;
+    border: solid black 3px;
+    height: 90px;
+    width: 90px;
+    margin: auto;
+    margin-top: 300px;
+}
+img.breadimg{
+
+}
+@keyframes main {
+    0% {transform: scale(1,1);}
+    50% {transform: scale(1.05,1.05);}
+    100% {transform: scale(1,1);}
+}
+@keyframes cclsecondary {
+    0%{
+        transform: rotate(0deg);
+        background: orange;
+    }
+    25%{
+        transform: rotate(90deg);
+        background: green;
+    }
+    50%{
+        transform: rotate(180deg);
+        background: red;
+    }
+    75%{
+        transform: rotate(270deg);
+        background: blue;
+    }
+    100%{
+        transform: rotate(360deg);
+        background: orange;
+    }
+    
+}
